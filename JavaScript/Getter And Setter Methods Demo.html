@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Getter And Setter Methods</title>
+</head>
+<body>
+<script type="text/javascript" lang="javascript">
+    let person = {
+        firstname: 'John',
+        lastname: 'Doe',
+        age: 59,
+        <!-- Demonstration Of Getter Methods-->
+        get id() {
+            return this.firstname;
+        }
+    };
+    <!--Demonstration of Setter Methods-->
+    document.write("Before Updation:"+person.id);
+    <!-- Before Updation-->
+    person.firstname="Alice";
+    document.write("<br>","After Updation:"+person.firstname);
+</script>
+</body>
+</html>

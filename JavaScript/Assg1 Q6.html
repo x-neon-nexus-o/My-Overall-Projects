@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade System</title>
+</head>
+<body>
+<script type="text/javascript" lang="javascript">
+var students=[
+    {name:"Sumit",marks:80},
+    {name: "Kalpesh",marks:77},
+    {name:"Amit",marks:88},
+    {name:"Tejas",marks:93},
+    {name:"Abhishek",marks:65}
+];
+
+var Total=0;
+for (var i=0;i<students.length;i++){
+  Total+=students[i].marks;
+}
+average=Total/students.length;
+
+if (average<60){
+    document.write("E");
+}
+else if (average<70){
+    document.write("D");
+}
+else if (average<80){
+    document.write("C");
+}
+else if (average<90){
+    document.write("B");
+}
+else{
+    document.write("A");
+}
+document.write("<br>");
+document.write("Average of overall students are:"+average);
+</script>
+</body>
+</html>

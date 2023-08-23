@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorting</title>
+</head>
+<body>
+<script type="text/javascript" lang="javascript">
+  let students = [
+    {name: "Amit", marks: 70},
+    {name: "Sumit", marks: 78},
+    {name: "Amisha", marks: 71}
+  ];
+
+  students.sort(function (a,b)
+  {
+    return a.marks-b.marks;
+  });
+
+  document.write("List Of Students In Ascending Order","<br>");
+  for (var i=0;i<students.length;i++)
+  {
+    document.write(students[i].name+":"+students[i].marks,"<br>");
+  }
+  var totalmarks=0;
+  for (var i=0;i<students.length;i++){
+    totalmarks+=students[i].marks;
+  }
+  var averageperfo=totalmarks/students.length;
+
+  document.write("Average Performance Of The class:"+averageperfo);
+</script>
+</body>
+</html>

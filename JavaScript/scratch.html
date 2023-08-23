@@ -1,0 +1,14 @@
+<html lang="en">
+<script type="text/javascript" lang="javascript">
+    function doTwice(func,value)
+    {
+        func(value);
+        func(value);
+    }
+    function logMessage(message){
+        document.write(message);
+    }
+
+    doTwice(logMessage,'This will be logged twice');
+</script>
+</html>
