@@ -13,7 +13,7 @@ public class Biodata extends Frame {
         setSize(900, 500);
         setLayout(null);
 
-        setTitle("Biodata Form");
+        setTitle("Biodata");
 
         Label lblheader = new Label("Biodata Form", Label.CENTER);
         lblheader.setBounds(0, 50, 900, 30);
